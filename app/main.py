@@ -1,11 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import torchvision
-from torchvision import transforms
 import torch
 from PIL import Image
 import numpy as np
-import cv2
 import io, json
 import base64
 from skimage.transform import resize
