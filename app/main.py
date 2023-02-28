@@ -9,6 +9,10 @@ from skimage.transform import resize
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
 from torch import nn
 import torch.nn.functional as F
 

@@ -7,7 +7,7 @@ payload = json.dumps({
   "base64str": base64str,
   "threshold": 0.5
 })
-response = requests.put("http://127.0.0.1:8000/predict",data = payload)
+response = requests.put("http://52.30.21.139/predict",data = payload)
 data_dict = response.json()
 
 print(data_dict)
