@@ -65,7 +65,7 @@ class CNN(torch.nn.Module):
 # load a pre-trained Model and convert it to eval mode. 
 # This model loads just once when we start the API.
 model = CNN()
-model.load_state_dict(torch.load('~/peuler-bot/best_model.pt', map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('best_model.pt', map_location=torch.device('cpu')))
 
 model.eval()
 
